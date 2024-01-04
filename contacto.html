@@ -1,46 +1,54 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Contacto</title>
-    <link rel="stylesheet" href="index.css">
-
 </head>
 <body>
-    <div class="container">
-
-        <nav>
-            <Ul>
-                <li>
-                    <a href="index.html">Sobre mim</a>
-                </li>
-                <li>
-                    <a href="projecto">Projecto</a>
-                </li>
-                <li>
-                    <a href="contacto">Contacto</a>
-                </li>
-            </Ul>
-        </nav>
     
-        <header class="center">
-            <div>
-                <img src="paulo2.jpg">
-            </div>
-            <h1><bdo>Paulo Ndala</bdo></h1>
-            <h2> Desenvolvedor de Software</h2>
-        </header>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="index.html">
+                    <img href="index.html" class="logo" src="IMAG/descarregar.jpg" alt="logo da news huila">
+                    <h4 href="index.html" >News Huíla</h4>
+                </a>
+            </div><!--logo-->
+    
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                    <li><a href="recentes.html">Notícias Recentes</a></li>
+                    
+                    <li class="search-box"> <input class="search-text" type="text" placeholder="Pesquisar">
+                    <a href="#" class="search-btn">
+                        <img src="IMAG/transferir (3).png" alt="Lupa" height="20" width="20">
+                    </a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <div class="btn-contacto">
+                <a href="contacto.html">
+                    <button>Contacto</button>
+                </a>
 
-        <form class="contacto-form" action="https//formsubmit.co/paulondala06@email.com" method="post">
-            <label for="email"><b>E-mail</b></label> 
-            <input type="email" name="email" id="email" required>
-            <label for="message"><b>Mensagem</b></label>
-            <input type="text" name="message" id="message" required>
-            <input type="hidden" name="-text" value="https://127.0.0.1:5500/thanks.html">
-            <button type="submit"><b>Enviar</b></button>
-        </form>
-    </div>
+            </div><!--btn-contacto-->
+        </div><!--interface-->
+    </header>
+
+    <form class="contacto-form" action="https//formsubmit.co/paulondala06@email.com" method="post">
+        <label for="email"><b>E-mail</b></label> 
+        <input type="email" name="email" id="email" required>
+        <label for="message"><b>Mensagem</b></label>
+        <input type="text" name="message" id="message" required>
+        <input type="hidden" name="-text" value="https://127.0.0.1:5500/thanks.html">
+        <button class="btn-contacto " type="submit">Enviar</button>
+    </form>
+
 </body>
 </html>
